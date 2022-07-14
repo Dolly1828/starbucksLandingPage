@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/ddee2eeed7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+
+        <div class="circle"></div>
+
+        <header>
+            <a href="#"><img src="img/logo (2).png"  class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="hamburgerMenu">
+                <a href=""><i class="fas fa-align-justify"></i></a>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="textBx">
+                <h2>It's not just Coffee <br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, officia temporibus quasi fuga, sed itaque repellat quis, nesciunt nostrum nulla consequuntur vero repudiandae sit asperiores vitae magnam ipsam harum ratione.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/img1.png" class="starbucks">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" onclick="imgSlider('img/img1.png');chgCircleColor('#017143')"></li>
+            <li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png');chgCircleColor('#eb7495')"></li>
+            <li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png');chgCircleColor('#d752b1')"></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook (1).png" alt=""></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="img/instagram (1).png" alt=""></a></li>
+        </ul>
+    </section>
+
+
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function chgCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
